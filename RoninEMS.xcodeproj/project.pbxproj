@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F075FF142679276E00ADC7C5 /* RoninEMSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F075FF132679276E00ADC7C5 /* RoninEMSApp.swift */; };
+		F075FF162679276E00ADC7C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F075FF152679276E00ADC7C5 /* ContentView.swift */; };
+		F075FF182679276F00ADC7C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F075FF172679276F00ADC7C5 /* Assets.xcassets */; };
+		F075FF1B2679276F00ADC7C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F075FF1A2679276F00ADC7C5 /* Preview Assets.xcassets */; };
+		F075FF262679276F00ADC7C5 /* RoninEMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F075FF252679276F00ADC7C5 /* RoninEMSTests.swift */; };
+		F075FF312679276F00ADC7C5 /* RoninEMSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F075FF302679276F00ADC7C5 /* RoninEMSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F075FF222679276F00ADC7C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F075FF082679276E00ADC7C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F075FF0F2679276E00ADC7C5;
+			remoteInfo = RoninEMS;
+		};
+		F075FF2D2679276F00ADC7C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F075FF082679276E00ADC7C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F075FF0F2679276E00ADC7C5;
+			remoteInfo = RoninEMS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F075FF102679276E00ADC7C5 /* RoninEMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoninEMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F075FF132679276E00ADC7C5 /* RoninEMSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoninEMSApp.swift; sourceTree = "<group>"; };
+		F075FF152679276E00ADC7C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F075FF172679276F00ADC7C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F075FF1A2679276F00ADC7C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F075FF1C2679276F00ADC7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F075FF212679276F00ADC7C5 /* RoninEMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoninEMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F075FF252679276F00ADC7C5 /* RoninEMSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoninEMSTests.swift; sourceTree = "<group>"; };
+		F075FF272679276F00ADC7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F075FF2C2679276F00ADC7C5 /* RoninEMSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoninEMSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F075FF302679276F00ADC7C5 /* RoninEMSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoninEMSUITests.swift; sourceTree = "<group>"; };
+		F075FF322679276F00ADC7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F075FF0D2679276E00ADC7C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F075FF1E2679276F00ADC7C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F075FF292679276F00ADC7C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F075FF072679276E00ADC7C5 = {
+			isa = PBXGroup;
+			children = (
+				F075FF122679276E00ADC7C5 /* RoninEMS */,
+				F075FF242679276F00ADC7C5 /* RoninEMSTests */,
+				F075FF2F2679276F00ADC7C5 /* RoninEMSUITests */,
+				F075FF112679276E00ADC7C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F075FF112679276E00ADC7C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F075FF102679276E00ADC7C5 /* RoninEMS.app */,
+				F075FF212679276F00ADC7C5 /* RoninEMSTests.xctest */,
+				F075FF2C2679276F00ADC7C5 /* RoninEMSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F075FF122679276E00ADC7C5 /* RoninEMS */ = {
+			isa = PBXGroup;
+			children = (
+				F075FF132679276E00ADC7C5 /* RoninEMSApp.swift */,
+				F075FF152679276E00ADC7C5 /* ContentView.swift */,
+				F075FF172679276F00ADC7C5 /* Assets.xcassets */,
+				F075FF1C2679276F00ADC7C5 /* Info.plist */,
+				F075FF192679276F00ADC7C5 /* Preview Content */,
+			);
+			path = RoninEMS;
+			sourceTree = "<group>";
+		};
+		F075FF192679276F00ADC7C5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F075FF1A2679276F00ADC7C5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F075FF242679276F00ADC7C5 /* RoninEMSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F075FF252679276F00ADC7C5 /* RoninEMSTests.swift */,
+				F075FF272679276F00ADC7C5 /* Info.plist */,
+			);
+			path = RoninEMSTests;
+			sourceTree = "<group>";
+		};
+		F075FF2F2679276F00ADC7C5 /* RoninEMSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F075FF302679276F00ADC7C5 /* RoninEMSUITests.swift */,
+				F075FF322679276F00ADC7C5 /* Info.plist */,
+			);
+			path = RoninEMSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F075FF0F2679276E00ADC7C5 /* RoninEMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F075FF352679276F00ADC7C5 /* Build configuration list for PBXNativeTarget "RoninEMS" */;
+			buildPhases = (
+				F075FF0C2679276E00ADC7C5 /* Sources */,
+				F075FF0D2679276E00ADC7C5 /* Frameworks */,
+				F075FF0E2679276E00ADC7C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoninEMS;
+			productName = RoninEMS;
+			productReference = F075FF102679276E00ADC7C5 /* RoninEMS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F075FF202679276F00ADC7C5 /* RoninEMSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F075FF382679276F00ADC7C5 /* Build configuration list for PBXNativeTarget "RoninEMSTests" */;
+			buildPhases = (
+				F075FF1D2679276F00ADC7C5 /* Sources */,
+				F075FF1E2679276F00ADC7C5 /* Frameworks */,
+				F075FF1F2679276F00ADC7C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F075FF232679276F00ADC7C5 /* PBXTargetDependency */,
+			);
+			name = RoninEMSTests;
+			productName = RoninEMSTests;
+			productReference = F075FF212679276F00ADC7C5 /* RoninEMSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F075FF2B2679276F00ADC7C5 /* RoninEMSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F075FF3B2679276F00ADC7C5 /* Build configuration list for PBXNativeTarget "RoninEMSUITests" */;
+			buildPhases = (
+				F075FF282679276F00ADC7C5 /* Sources */,
+				F075FF292679276F00ADC7C5 /* Frameworks */,
+				F075FF2A2679276F00ADC7C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F075FF2E2679276F00ADC7C5 /* PBXTargetDependency */,
+			);
+			name = RoninEMSUITests;
+			productName = RoninEMSUITests;
+			productReference = F075FF2C2679276F00ADC7C5 /* RoninEMSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F075FF082679276E00ADC7C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F075FF0F2679276E00ADC7C5 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					F075FF202679276F00ADC7C5 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F075FF0F2679276E00ADC7C5;
+					};
+					F075FF2B2679276F00ADC7C5 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F075FF0F2679276E00ADC7C5;
+					};
+				};
+			};
+			buildConfigurationList = F075FF0B2679276E00ADC7C5 /* Build configuration list for PBXProject "RoninEMS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F075FF072679276E00ADC7C5;
+			productRefGroup = F075FF112679276E00ADC7C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F075FF0F2679276E00ADC7C5 /* RoninEMS */,
+				F075FF202679276F00ADC7C5 /* RoninEMSTests */,
+				F075FF2B2679276F00ADC7C5 /* RoninEMSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F075FF0E2679276E00ADC7C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F075FF1B2679276F00ADC7C5 /* Preview Assets.xcassets in Resources */,
+				F075FF182679276F00ADC7C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F075FF1F2679276F00ADC7C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F075FF2A2679276F00ADC7C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F075FF0C2679276E00ADC7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F075FF162679276E00ADC7C5 /* ContentView.swift in Sources */,
+				F075FF142679276E00ADC7C5 /* RoninEMSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F075FF1D2679276F00ADC7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F075FF262679276F00ADC7C5 /* RoninEMSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F075FF282679276F00ADC7C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F075FF312679276F00ADC7C5 /* RoninEMSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F075FF232679276F00ADC7C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F075FF0F2679276E00ADC7C5 /* RoninEMS */;
+			targetProxy = F075FF222679276F00ADC7C5 /* PBXContainerItemProxy */;
+		};
+		F075FF2E2679276F00ADC7C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F075FF0F2679276E00ADC7C5 /* RoninEMS */;
+			targetProxy = F075FF2D2679276F00ADC7C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F075FF332679276F00ADC7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F075FF342679276F00ADC7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F075FF362679276F00ADC7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RoninEMS/Preview Content\"";
+				DEVELOPMENT_TEAM = FJ8WUE337D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RoninEMS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roninems.RoninEMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F075FF372679276F00ADC7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RoninEMS/Preview Content\"";
+				DEVELOPMENT_TEAM = FJ8WUE337D;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = RoninEMS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roninems.RoninEMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F075FF392679276F00ADC7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJ8WUE337D;
+				INFOPLIST_FILE = RoninEMSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roninems.RoninEMSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoninEMS.app/RoninEMS";
+			};
+			name = Debug;
+		};
+		F075FF3A2679276F00ADC7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJ8WUE337D;
+				INFOPLIST_FILE = RoninEMSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roninems.RoninEMSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RoninEMS.app/RoninEMS";
+			};
+			name = Release;
+		};
+		F075FF3C2679276F00ADC7C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJ8WUE337D;
+				INFOPLIST_FILE = RoninEMSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roninems.RoninEMSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoninEMS;
+			};
+			name = Debug;
+		};
+		F075FF3D2679276F00ADC7C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJ8WUE337D;
+				INFOPLIST_FILE = RoninEMSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roninems.RoninEMSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RoninEMS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F075FF0B2679276E00ADC7C5 /* Build configuration list for PBXProject "RoninEMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F075FF332679276F00ADC7C5 /* Debug */,
+				F075FF342679276F00ADC7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F075FF352679276F00ADC7C5 /* Build configuration list for PBXNativeTarget "RoninEMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F075FF362679276F00ADC7C5 /* Debug */,
+				F075FF372679276F00ADC7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F075FF382679276F00ADC7C5 /* Build configuration list for PBXNativeTarget "RoninEMSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F075FF392679276F00ADC7C5 /* Debug */,
+				F075FF3A2679276F00ADC7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F075FF3B2679276F00ADC7C5 /* Build configuration list for PBXNativeTarget "RoninEMSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F075FF3C2679276F00ADC7C5 /* Debug */,
+				F075FF3D2679276F00ADC7C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F075FF082679276E00ADC7C5 /* Project object */;
+}
