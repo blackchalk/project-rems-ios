@@ -19,6 +19,7 @@
 		F0B64169267C18A80080D8A1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B64168267C18A80080D8A1 /* OnboardingView.swift */; };
 		F0B6416C267C1F810080D8A1 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B6416B267C1F810080D8A1 /* OnboardingModel.swift */; };
 		F0B6416F267C203D0080D8A1 /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B6416E267C203D0080D8A1 /* OnboardingData.swift */; };
+		F0B64171267C834E0080D8A1 /* NextButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B64170267C834E0080D8A1 /* NextButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		F0B64168267C18A80080D8A1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		F0B6416B267C1F810080D8A1 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		F0B6416E267C203D0080D8A1 /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
+		F0B64170267C834E0080D8A1 /* NextButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				F0B64162267BF03F0080D8A1 /* OnBoardingCardView.swift */,
 				F0B64164267BF4290080D8A1 /* OnboardingTopMenu.swift */,
 				F0B64166267C098A0080D8A1 /* SkipButtonView.swift */,
+				F0B64170267C834E0080D8A1 /* NextButtonView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B64171267C834E0080D8A1 /* NextButtonView.swift in Sources */,
 				F075FF162679276E00ADC7C5 /* ContentView.swift in Sources */,
 				F0B64165267BF4290080D8A1 /* OnboardingTopMenu.swift in Sources */,
 				F0B64167267C098A0080D8A1 /* SkipButtonView.swift in Sources */,

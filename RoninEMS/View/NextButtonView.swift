@@ -1,5 +1,5 @@
 //
-//  SkipButtonView.swift
+//  NextButtonView.swift
 //  RoninEMS
 //
 //  Created by Alvin Raygon on 6/18/21.
@@ -7,23 +7,19 @@
 
 import SwiftUI
 
-struct SkipButtonView: View {
+struct NextButtonView: View {
     @AppStorage("isOnBoarding") var isOnBoarding: Bool?
     var body: some View {
         Button(action: {
             isOnBoarding = false
         }, label: {
-            Text("Skip")
-                .font(.callout)
-                .fontWeight(.light)
+            Text("Next")
         })
-        .accentColor(.gray)
     }
 }
 
-struct SkipButtonView_Previews: PreviewProvider {
+struct NextButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        SkipButtonView()
-            .previewLayout(.sizeThatFits)
+        NextButtonView()
     }
 }

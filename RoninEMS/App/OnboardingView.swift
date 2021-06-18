@@ -9,18 +9,23 @@ import SwiftUI
 
 struct OnboardingView: View {
     // MARK: - PROPERTIES
-    
     var items : [OnboardingModel] = onboardingScreens
     
     var body: some View {
-        TabView {
-            ForEach(items[0..<items.count]) { item in
-                OnBoardingCardView(model: item)
+        VStack {
+            OnboardingTopMenu()
+            TabView(selection: $selectedPage) {
+                ForEach(items[0..<items.count]) { item in
+                    OnBoardingCardView(model: item)
+                }
             }
+            .tabViewStyle(PageTabViewStyle())
+            NextButtonView()
         }
-        .tabViewStyle(PageTabViewStyle())
     }
 }
+
+
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {

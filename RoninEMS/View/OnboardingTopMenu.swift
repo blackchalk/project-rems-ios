@@ -10,10 +10,13 @@ import SwiftUI
 struct OnboardingTopMenu: View {
     var body: some View {
         HStack {
-            Image("menu_logo")
-                .frame(maxWidth: .infinity ,alignment: .leading)
+            Image("ronin_logo_final")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
             SkipButtonView()
-        }.padding(.horizontal, 24)
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .padding()
+        }
     }
 }
 

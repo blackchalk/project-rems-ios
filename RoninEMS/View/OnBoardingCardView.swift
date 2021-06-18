@@ -9,7 +9,6 @@ import SwiftUI
 
 struct OnBoardingCardView: View {
     // MARK: PROPERTIES
-    
     var model: OnboardingModel
     
     @State private var isAnimating: Bool = false
@@ -24,17 +23,18 @@ struct OnBoardingCardView: View {
                 .shadow(color: Color(red: 0, green: 0, blue: 0,opacity: 0.15), radius: 8, x: 6, y: 8)
                 .scaleEffect(isAnimating ? 1.0 : 0.6)
             // title
-            Text(model.headline)
+            Text(model.headline.uppercased())
                 .font(.system(size: 30))
                 .fontWeight(.heavy)
                 .foregroundColor(Color("titleTextColor"))
             // headline
             Text(model.description)
                 .font(.system(size: 14))
-                .foregroundColor(Color("subHeadlineTextColor"))
+                .foregroundColor(Color("AccentColor"))
                 .multilineTextAlignment(.center)
                 .frame(maxWidth: 480)
                 .padding(.horizontal, 10)
+
         }
         .onAppear {
             withAnimation(.easeOut(duration: 0.5)){
