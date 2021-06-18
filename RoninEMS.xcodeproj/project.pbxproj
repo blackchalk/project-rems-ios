@@ -13,6 +13,12 @@
 		F075FF1B2679276F00ADC7C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F075FF1A2679276F00ADC7C5 /* Preview Assets.xcassets */; };
 		F075FF262679276F00ADC7C5 /* RoninEMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F075FF252679276F00ADC7C5 /* RoninEMSTests.swift */; };
 		F075FF312679276F00ADC7C5 /* RoninEMSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F075FF302679276F00ADC7C5 /* RoninEMSUITests.swift */; };
+		F0B64163267BF03F0080D8A1 /* OnBoardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B64162267BF03F0080D8A1 /* OnBoardingCardView.swift */; };
+		F0B64165267BF4290080D8A1 /* OnboardingTopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B64164267BF4290080D8A1 /* OnboardingTopMenu.swift */; };
+		F0B64167267C098A0080D8A1 /* SkipButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B64166267C098A0080D8A1 /* SkipButtonView.swift */; };
+		F0B64169267C18A80080D8A1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B64168267C18A80080D8A1 /* OnboardingView.swift */; };
+		F0B6416C267C1F810080D8A1 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B6416B267C1F810080D8A1 /* OnboardingModel.swift */; };
+		F0B6416F267C203D0080D8A1 /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B6416E267C203D0080D8A1 /* OnboardingData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		F075FF2C2679276F00ADC7C5 /* RoninEMSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoninEMSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F075FF302679276F00ADC7C5 /* RoninEMSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoninEMSUITests.swift; sourceTree = "<group>"; };
 		F075FF322679276F00ADC7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0B64162267BF03F0080D8A1 /* OnBoardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCardView.swift; sourceTree = "<group>"; };
+		F0B64164267BF4290080D8A1 /* OnboardingTopMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTopMenu.swift; sourceTree = "<group>"; };
+		F0B64166267C098A0080D8A1 /* SkipButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipButtonView.swift; sourceTree = "<group>"; };
+		F0B64168267C18A80080D8A1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		F0B6416B267C1F810080D8A1 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		F0B6416E267C203D0080D8A1 /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +107,10 @@
 		F075FF122679276E00ADC7C5 /* RoninEMS */ = {
 			isa = PBXGroup;
 			children = (
-				F075FF132679276E00ADC7C5 /* RoninEMSApp.swift */,
-				F075FF152679276E00ADC7C5 /* ContentView.swift */,
+				F0B6416D267C202B0080D8A1 /* Data */,
+				F0B6416A267C1F2D0080D8A1 /* Model */,
+				F0B64161267BEFDF0080D8A1 /* View */,
+				F0B64160267BEFCE0080D8A1 /* App */,
 				F075FF172679276F00ADC7C5 /* Assets.xcassets */,
 				F075FF1C2679276F00ADC7C5 /* Info.plist */,
 				F075FF192679276F00ADC7C5 /* Preview Content */,
@@ -128,6 +142,42 @@
 				F075FF322679276F00ADC7C5 /* Info.plist */,
 			);
 			path = RoninEMSUITests;
+			sourceTree = "<group>";
+		};
+		F0B64160267BEFCE0080D8A1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F075FF132679276E00ADC7C5 /* RoninEMSApp.swift */,
+				F075FF152679276E00ADC7C5 /* ContentView.swift */,
+				F0B64168267C18A80080D8A1 /* OnboardingView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F0B64161267BEFDF0080D8A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0B64162267BF03F0080D8A1 /* OnBoardingCardView.swift */,
+				F0B64164267BF4290080D8A1 /* OnboardingTopMenu.swift */,
+				F0B64166267C098A0080D8A1 /* SkipButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0B6416A267C1F2D0080D8A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F0B6416B267C1F810080D8A1 /* OnboardingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0B6416D267C202B0080D8A1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F0B6416E267C203D0080D8A1 /* OnboardingData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +310,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F075FF162679276E00ADC7C5 /* ContentView.swift in Sources */,
+				F0B64165267BF4290080D8A1 /* OnboardingTopMenu.swift in Sources */,
+				F0B64167267C098A0080D8A1 /* SkipButtonView.swift in Sources */,
+				F0B64169267C18A80080D8A1 /* OnboardingView.swift in Sources */,
+				F0B6416F267C203D0080D8A1 /* OnboardingData.swift in Sources */,
+				F0B6416C267C1F810080D8A1 /* OnboardingModel.swift in Sources */,
+				F0B64163267BF03F0080D8A1 /* OnBoardingCardView.swift in Sources */,
 				F075FF142679276E00ADC7C5 /* RoninEMSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"RoninEMS/Preview Content\"";
 				DEVELOPMENT_TEAM = FJ8WUE337D;
 				ENABLE_PREVIEWS = YES;
@@ -431,6 +488,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -440,6 +498,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"RoninEMS/Preview Content\"";
 				DEVELOPMENT_TEAM = FJ8WUE337D;
 				ENABLE_PREVIEWS = YES;
@@ -453,6 +512,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
