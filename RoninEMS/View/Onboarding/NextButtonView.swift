@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct NextButtonView: View {
-    @AppStorage("isOnBoarding") var isOnBoarding: Bool?
+    
+    @AppStorage("isOnboarding") var isOnboarding: Bool?
+    
     var body: some View {
         Button(action: {
-            isOnBoarding = false
+            isOnboarding = false
         }, label: {
             Text("Next")
         })

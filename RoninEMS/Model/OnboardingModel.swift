@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OnboardingModel: Identifiable {
-    var id = UUID()
+    var id: Int = 0
     var title: String = ""
     var headline: String
     var image: String
