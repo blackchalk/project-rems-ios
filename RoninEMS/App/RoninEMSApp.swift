@@ -10,13 +10,15 @@ import SwiftUI
 @main
 struct RoninEMSApp: App {
     @AppStorage("isOnboarding") var isOnboarding: Bool = true
-    
+    @State var enteringLoginPage: Bool = false
     var body: some Scene {
         WindowGroup {
             if isOnboarding {
                 OnboardingView()
-            } else {
-                ContentView()
+            } else if enteringLoginPage {
+                LoginView()
+            }else{
+                SignUpView(enteringLoginPage: $enteringLoginPage)
             }
         }
     }
