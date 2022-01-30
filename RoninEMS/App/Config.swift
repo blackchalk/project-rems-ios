@@ -9,7 +9,7 @@ import Foundation
 
 struct Config {
     
-    static let qa: String = "https://appspcs.vstecs.com.ph"
+    static let qa: String = "https://mobile-dev.roninems.com"
     static let prod: String = "https://api.roninems.com"
     static let baseURL = qa
 
