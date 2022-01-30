@@ -11,15 +11,15 @@ struct SignUpBottomView : View {
     @Binding var enteringLoginPage: Bool
     var body: some View {
         VStack(spacing:20) {
-            HStack {
-                Text("Already have an account? ")
-                Button(action: {
-//                    enteringLoginPage = true
-                }){
-                    Text("Login")
-                        .foregroundColor(Color.red)
-                }
-            }
+//            HStack {
+//                Text("Already have an account? ")
+//                Button(action: {
+////                    enteringLoginPage = true
+//                }){
+//                    Text("Login")
+//                        .foregroundColor(Color.red)
+//                }
+//            }
             Button(action: {
                 // enter login page
                 UIApplication.shared.open(URL(string: Config.baseURL.appending("/privacy-policy.html"))!)
