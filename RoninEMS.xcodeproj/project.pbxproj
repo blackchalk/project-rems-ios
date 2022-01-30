@@ -13,6 +13,8 @@
 		F075FF1B2679276F00ADC7C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F075FF1A2679276F00ADC7C5 /* Preview Assets.xcassets */; };
 		F075FF262679276F00ADC7C5 /* RoninEMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F075FF252679276F00ADC7C5 /* RoninEMSTests.swift */; };
 		F075FF312679276F00ADC7C5 /* RoninEMSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F075FF302679276F00ADC7C5 /* RoninEMSUITests.swift */; };
+		F091702027A5A31E00240418 /* OnboardingBottomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F091701F27A5A31E00240418 /* OnboardingBottomMenu.swift */; };
+		F091702227A5A9B600240418 /* GetStartedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F091702127A5A9B600240418 /* GetStartedButtonView.swift */; };
 		F0B64163267BF03F0080D8A1 /* OnBoardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B64162267BF03F0080D8A1 /* OnBoardingCardView.swift */; };
 		F0B64165267BF4290080D8A1 /* OnboardingTopMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B64164267BF4290080D8A1 /* OnboardingTopMenu.swift */; };
 		F0B64167267C098A0080D8A1 /* SkipButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B64166267C098A0080D8A1 /* SkipButtonView.swift */; };
@@ -52,6 +54,8 @@
 		F075FF2C2679276F00ADC7C5 /* RoninEMSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoninEMSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F075FF302679276F00ADC7C5 /* RoninEMSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoninEMSUITests.swift; sourceTree = "<group>"; };
 		F075FF322679276F00ADC7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F091701F27A5A31E00240418 /* OnboardingBottomMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBottomMenu.swift; sourceTree = "<group>"; };
+		F091702127A5A9B600240418 /* GetStartedButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStartedButtonView.swift; sourceTree = "<group>"; };
 		F0B64162267BF03F0080D8A1 /* OnBoardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCardView.swift; sourceTree = "<group>"; };
 		F0B64164267BF4290080D8A1 /* OnboardingTopMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTopMenu.swift; sourceTree = "<group>"; };
 		F0B64166267C098A0080D8A1 /* SkipButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipButtonView.swift; sourceTree = "<group>"; };
@@ -86,6 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F0740328268A34A900656E99 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F0B64162267BF03F0080D8A1 /* OnBoardingCardView.swift */,
+				F0B64164267BF4290080D8A1 /* OnboardingTopMenu.swift */,
+				F091701F27A5A31E00240418 /* OnboardingBottomMenu.swift */,
+				F0B64166267C098A0080D8A1 /* SkipButtonView.swift */,
+				F0B64170267C834E0080D8A1 /* NextButtonView.swift */,
+				F091702127A5A9B600240418 /* GetStartedButtonView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		F075FF072679276E00ADC7C5 = {
 			isa = PBXGroup;
 			children = (
@@ -159,10 +176,7 @@
 		F0B64161267BEFDF0080D8A1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F0B64162267BF03F0080D8A1 /* OnBoardingCardView.swift */,
-				F0B64164267BF4290080D8A1 /* OnboardingTopMenu.swift */,
-				F0B64166267C098A0080D8A1 /* SkipButtonView.swift */,
-				F0B64170267C834E0080D8A1 /* NextButtonView.swift */,
+				F0740328268A34A900656E99 /* Onboarding */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,8 +330,10 @@
 				F075FF162679276E00ADC7C5 /* ContentView.swift in Sources */,
 				F0B64165267BF4290080D8A1 /* OnboardingTopMenu.swift in Sources */,
 				F0B64167267C098A0080D8A1 /* SkipButtonView.swift in Sources */,
+				F091702227A5A9B600240418 /* GetStartedButtonView.swift in Sources */,
 				F0B64169267C18A80080D8A1 /* OnboardingView.swift in Sources */,
 				F0B6416F267C203D0080D8A1 /* OnboardingData.swift in Sources */,
+				F091702027A5A31E00240418 /* OnboardingBottomMenu.swift in Sources */,
 				F0B6416C267C1F810080D8A1 /* OnboardingModel.swift in Sources */,
 				F0B64163267BF03F0080D8A1 /* OnBoardingCardView.swift in Sources */,
 				F075FF142679276E00ADC7C5 /* RoninEMSApp.swift in Sources */,
@@ -480,7 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"RoninEMS/Preview Content\"";
-				DEVELOPMENT_TEAM = FJ8WUE337D;
+				DEVELOPMENT_TEAM = 7TJXDVHXC8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RoninEMS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -488,6 +504,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roninems.customer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -504,7 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"RoninEMS/Preview Content\"";
-				DEVELOPMENT_TEAM = FJ8WUE337D;
+				DEVELOPMENT_TEAM = 7TJXDVHXC8;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RoninEMS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -512,6 +529,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.roninems.customer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

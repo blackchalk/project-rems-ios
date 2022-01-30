@@ -10,17 +10,19 @@ import SwiftUI
 struct OnboardingView: View {
     // MARK: - PROPERTIES
     var items : [OnboardingModel] = onboardingScreens
+    @State private var selectedPage : Int = 0
+    @State private var showGetStarted = false
     
     var body: some View {
         VStack {
-            OnboardingTopMenu()
-            TabView(selection: $selectedPage) {
+            OnboardingTopMenu(shouldShowGetStarted: $showGetStarted)
+            TabView (selection: $selectedPage){
                 ForEach(items[0..<items.count]) { item in
-                    OnBoardingCardView(model: item)
+                    OnBoardingCardView(model: item).tag(item.id)
                 }
             }
             .tabViewStyle(PageTabViewStyle())
-            NextButtonView()
+            OnboardingBottomMenu(selectedPage:$selectedPage)
         }
     }
 }
@@ -29,7 +31,11 @@ struct OnboardingView: View {
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView(items: onboardingScreens)
-            .previewDevice("iPhone 11 Pro")
+        Group {
+            OnboardingView(items: onboardingScreens)
+                .previewDevice("iPhone 12 Pro Max")
+//            OnboardingView(items: onboardingScreens)
+//                .previewDevice("iPhone SE")
+        }
     }
 }

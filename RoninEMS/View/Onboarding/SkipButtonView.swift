@@ -12,6 +12,7 @@ struct SkipButtonView: View {
     var body: some View {
         Button(action: {
             isOnboarding = false
+            print("SkipButtonView")
         }, label: {
             Text("Skip")
                 .font(.callout)
