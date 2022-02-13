@@ -24,7 +24,7 @@ struct SignUpView: View {
             if #available(iOS 15.0, *) {
                 Button(action: {
                     print("sign up bin tapped")
-                    UIApplication.shared.open(URL(string: Config.baseURL.appending("/register-mobile.html"))!)
+                    UIApplication.shared.open(URL(string: Config.webviewBaseUrl.appending("/register-mobile.html"))!)
                 }) {
                     Text("SIGN UP")
                         .frame(minWidth: 0, maxWidth: .infinity)
@@ -42,7 +42,7 @@ struct SignUpView: View {
                 // Fallback on earlier versions
                 Button(action: {
                     print("sign up bin tapped")
-                    UIApplication.shared.open(URL(string: Config.baseURL.appending("/register-mobile.html"))!)
+                    UIApplication.shared.open(URL(string: Config.webviewBaseUrl.appending("/register-mobile.html"))!)
                 }) {
                     Text("SIGN UP")
                         .frame(minWidth: 0, maxWidth: .infinity)
@@ -66,6 +66,5 @@ struct SignUpView: View {
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(ColorScheme.allCases, id: \.self, content: SignUpView(enteringLoginPage: .constant(false)).preferredColorScheme)
-        
     }
 }
