@@ -30,14 +30,10 @@ struct ProfileView: View {
                 }
                 HStack{
                     ProfileHeaderVerifyNow()
-                        .frame(maxHeight: .infinity)
-                        .padding(.bottom, 25)
                     ProfileHeaderNameView()
                         .padding()
                 }
-                ProfileVerifiedIndicator()
-                    .frame(maxHeight: 42)
-                    .padding()
+                ProfileHeaderVerificationTest()
             }
             .frame(maxWidth:.infinity, maxHeight: .infinity,alignment: .center)
             .background(Color.ui.red)

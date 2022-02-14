@@ -45,6 +45,7 @@
 		F0D50A9E27A6C7FA009D8B40 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D50A9D27A6C7FA009D8B40 /* Config.swift */; };
 		F0D50AA027A6CA74009D8B40 /* SignUpTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D50A9F27A6CA74009D8B40 /* SignUpTopView.swift */; };
 		F0D50AA227A6E1C0009D8B40 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D50AA127A6E1C0009D8B40 /* LoginView.swift */; };
+		F0DD6E4227BA4A34003FF972 /* ProfileHeaderVerificationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DD6E4127BA4A34003FF972 /* ProfileHeaderVerificationTest.swift */; };
 		F0E7D7D827B8D1B700B79920 /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = F0E7D7D727B8D1B700B79920 /* JWTDecode */; };
 		F0F0B35327B5002B00324FFE /* LoginTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0B35227B5002B00324FFE /* LoginTopView.swift */; };
 		F0F0B35527B5006600324FFE /* LoginTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0B35427B5006600324FFE /* LoginTextFields.swift */; };
@@ -114,6 +115,7 @@
 		F0D50A9D27A6C7FA009D8B40 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		F0D50A9F27A6CA74009D8B40 /* SignUpTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTopView.swift; sourceTree = "<group>"; };
 		F0D50AA127A6E1C0009D8B40 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F0DD6E4127BA4A34003FF972 /* ProfileHeaderVerificationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderVerificationTest.swift; sourceTree = "<group>"; };
 		F0F0B35227B5002B00324FFE /* LoginTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTopView.swift; sourceTree = "<group>"; };
 		F0F0B35427B5006600324FFE /* LoginTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextFields.swift; sourceTree = "<group>"; };
 		F0F0B35627B5426C00324FFE /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 				F0608A5F27B9708E000ABE05 /* ProfileInformationView.swift */,
 				F0BD0D7127B988A40062CA7C /* ProfileHeaderNameView.swift */,
 				F0BD0D7327B994190062CA7C /* ProfileVerifiedIndicator.swift */,
+				F0DD6E4127BA4A34003FF972 /* ProfileHeaderVerificationTest.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				F091702027A5A31E00240418 /* OnboardingBottomMenu.swift in Sources */,
 				F0B6416C267C1F810080D8A1 /* OnboardingModel.swift in Sources */,
 				F0B64163267BF03F0080D8A1 /* OnBoardingCardView.swift in Sources */,
+				F0DD6E4227BA4A34003FF972 /* ProfileHeaderVerificationTest.swift in Sources */,
 				F075FF142679276E00ADC7C5 /* RoninEMSApp.swift in Sources */,
 				F0D50AA227A6E1C0009D8B40 /* LoginView.swift in Sources */,
 				F0CD56D627B6D4D90054C775 /* AccountService.swift in Sources */,

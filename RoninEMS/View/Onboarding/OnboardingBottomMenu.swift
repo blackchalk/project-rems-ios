@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct OnboardingBottomMenu: View {
-    @AppStorage("isOnboarding") var isOnboarding: Bool?
     @State private var shouldShowGetStarted: Bool = false
     @Binding var selectedPage : Int
     var body: some View{

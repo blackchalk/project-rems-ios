@@ -24,15 +24,13 @@ struct ProfileHeaderVerifyNow: View {
                                .resizable()
                                .scaledToFit()
                        })
-                    .frame(alignment: .center)
-                    .padding()
+                    .frame(maxWidth: 234, maxHeight: 300,alignment: .center)
                } else {
                    // Fallback on earlier versions
-                   Image(systemName: "person.fill.questionmark")
+                   Image(systemName: "person.fill")
                        .resizable()
                        .scaledToFit()
-                       .frame(maxWidth: 300, maxHeight: 400,alignment: .center)
-                       .padding()
+                       .frame(maxWidth: 164, maxHeight: 150,alignment: .center)
 
                }
             // verify no button l subscription type
@@ -49,7 +47,7 @@ struct ProfileHeaderVerifyNow: View {
                     .background(Color.white)
             }
             .cornerRadius(25)
-            .frame(maxWidth: 150, maxHeight: 50,alignment: .center)
+            .frame(maxWidth: 148, maxHeight: 48, alignment: .center)
         }
         .onChange(of: accountVM.profileResponse) { newValue in
             profilePhoto = newValue?.profilePic ?? ""
@@ -60,7 +58,8 @@ struct ProfileHeaderVerifyNow: View {
 struct ProfileHeaderVerifyNow_Previews: PreviewProvider {
     static var previews: some View {
         ProfileHeaderVerifyNow()
-            .environmentObject(AccountViewModel())
             .previewLayout(.sizeThatFits)
+            .environmentObject(AccountViewModel())
+            .background(Color.red)
     }
 }
