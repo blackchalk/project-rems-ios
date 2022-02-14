@@ -37,7 +37,6 @@
 		F0B6416F267C203D0080D8A1 /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B6416E267C203D0080D8A1 /* OnboardingData.swift */; };
 		F0B64171267C834E0080D8A1 /* NextButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B64170267C834E0080D8A1 /* NextButtonView.swift */; };
 		F0BD0D7227B988A40062CA7C /* ProfileHeaderNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD0D7127B988A40062CA7C /* ProfileHeaderNameView.swift */; };
-		F0BD0D7427B994190062CA7C /* ProfileVerifiedIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD0D7327B994190062CA7C /* ProfileVerifiedIndicator.swift */; };
 		F0CD56D427B6CD3E0054C775 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CD56D327B6CD3E0054C775 /* Users.swift */; };
 		F0CD56D627B6D4D90054C775 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CD56D527B6D4D90054C775 /* AccountService.swift */; };
 		F0CD56DA27B6DC220054C775 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CD56D927B6DC220054C775 /* URL+Extensions.swift */; };
@@ -107,7 +106,6 @@
 		F0B6416E267C203D0080D8A1 /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
 		F0B64170267C834E0080D8A1 /* NextButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtonView.swift; sourceTree = "<group>"; };
 		F0BD0D7127B988A40062CA7C /* ProfileHeaderNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderNameView.swift; sourceTree = "<group>"; };
-		F0BD0D7327B994190062CA7C /* ProfileVerifiedIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVerifiedIndicator.swift; sourceTree = "<group>"; };
 		F0CD56D327B6CD3E0054C775 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		F0CD56D527B6D4D90054C775 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
 		F0CD56D927B6DC220054C775 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
@@ -289,7 +287,6 @@
 				F0F1173927B9636200CD7CD3 /* ProfileHeaderVerifyNow.swift */,
 				F0608A5F27B9708E000ABE05 /* ProfileInformationView.swift */,
 				F0BD0D7127B988A40062CA7C /* ProfileHeaderNameView.swift */,
-				F0BD0D7327B994190062CA7C /* ProfileVerifiedIndicator.swift */,
 				F0DD6E4127BA4A34003FF972 /* ProfileHeaderVerificationTest.swift */,
 			);
 			path = View;
@@ -501,7 +498,6 @@
 				F091703D27A6C39300240418 /* SignUpBottomView.swift in Sources */,
 				F0CD56D427B6CD3E0054C775 /* Users.swift in Sources */,
 				F02334FE27B7EE4A0050D396 /* ProfileView.swift in Sources */,
-				F0BD0D7427B994190062CA7C /* ProfileVerifiedIndicator.swift in Sources */,
 				F0BD0D7227B988A40062CA7C /* ProfileHeaderNameView.swift in Sources */,
 				F091702027A5A31E00240418 /* OnboardingBottomMenu.swift in Sources */,
 				F0B6416C267C1F810080D8A1 /* OnboardingModel.swift in Sources */,

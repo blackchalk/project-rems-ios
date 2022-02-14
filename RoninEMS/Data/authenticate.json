@@ -1,0 +1,22 @@
+{
+"token_type": "bearer",
+"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIzIiwibmJmIjoxNjQ0NjU3MjkyLCJleHAiOjE2NDQ2NjA4OTIsImlhdCI6MTY0NDY1NzI5Mn0.R4y_gj_fbk3K7URVRTr-IExVTKlKygaAtg6Ibbs82RU",
+"access_token_expiration": "2022-02-12T18:14:52.797371+08:00",
+"refresh_token": "P/w/leCylpr/heW5XclKDSYRoyF70tyyPsK4Jm7MFEc9LAfw41qpVgn9l/ZhDD1ZEzJ35Aa2bxJzBuaw6xvqRg==",
+"refresh_token_expiration": "2022-02-19T09:14:52.8085974Z",
+"users": {
+"userID": 23,
+"firstName": "Lara",
+"lastName": "Sanchez",
+"email": "ls1001@yopmail.com",
+"referralCode": "",
+"password": "VnVjVkNPYW00Q1ZFOlNIZAjUmyr7mYIqn+FgbmqKS61b/6VO0HZV2b4nqaks1ImI",
+"isVerified": true,
+"verifiedAt": "2021-02-26T13:43:49.5333333",
+"isVerifiedHQ": true,
+"verifiedHQAt": "2021-02-25T20:35:03.3322318",
+"createdAt": "2021-02-10T05:52:02.0533409",
+"updatedAt": "2021-02-25T20:35:03.3323799",
+"isActive": true
+}
+}

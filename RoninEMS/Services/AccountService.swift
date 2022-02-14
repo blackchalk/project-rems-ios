@@ -33,7 +33,7 @@ class AccountService {
     static let shared = AccountService()
     
     func loginAccount(loginRequest: LoginRequest, completion: @escaping (Result<LoginResponse, NetworkError>) -> Void){
-        
+        print("\(loginRequest)")
         guard let url = URL.authenticateUser() else {
             return completion(.failure(.badURL))
         }
@@ -49,7 +49,7 @@ class AccountService {
                 return completion(.failure(.noData))
             }
             
-            let loginResponse = try! JSONDecoder().decode(LoginResponse.self, from: data) as? LoginResponse
+            let loginResponse = try? JSONDecoder().decode(LoginResponse.self, from: data)
 
             if let loginResponse = loginResponse {
                 completion(.success(loginResponse))

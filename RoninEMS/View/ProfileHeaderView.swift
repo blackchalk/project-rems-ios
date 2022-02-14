@@ -12,15 +12,15 @@ struct ProfileHeaderView: View {
     @State private var model : ProfileResponse?
     var body: some View {
         VStack {
-            ExtractedView(title: "Email", information: model?.user.email ?? "alvinraygonasddd@yahoo.com")
-            ExtractedView(title: "Gender", information: model?.gender ?? "Female")
-            ExtractedView(title: "Address", information: model?.currentAddress ?? "14 Tasdasdkjkj St Paranaque City Manila Philippines")
-            ExtractedView(title: "Birthdate", information: model?.birthdate ?? "1970-01-01")
-            ExtractedView(title: "Mobile number", information: model?.mobileNumber ?? "09123465781")
-            ExtractedView(title: "Industry", information: model?.industry ?? "SampleDidstor")
-            ExtractedView(title: "Employment status", information: model?.employmentStatus ?? "Employed")
+            ExtractedView(title: "Email", information: model?.user.email ?? "-")
+            ExtractedView(title: "Gender", information: model?.gender ?? "Male")
+            ExtractedView(title: "Address", information: model?.currentAddress ?? "-")
+            ExtractedView(title: "Birthdate", information: model?.birthdate ?? "--")
+            ExtractedView(title: "Mobile number", information: model?.mobileNumber ?? "--")
+            ExtractedView(title: "Industry", information: model?.industry ?? "--")
+            ExtractedView(title: "Employment status", information: model?.employmentStatus ?? "--")
             
-            ExtractedView(title: "Healthcard", information: model?.healthCard ?? "Medicard")
+            ExtractedView(title: "Healthcard", information: model?.healthCard ?? "--")
         }
         .frame(maxWidth:.infinity, alignment: .leading)
         .onChange(of: self.accountVM.profileResponse) { newValue in

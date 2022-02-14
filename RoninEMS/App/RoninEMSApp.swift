@@ -11,6 +11,7 @@ import SwiftUI
 struct RoninEMSApp: App {
     @AppStorage("isOnboarding") var isOnboarding: Bool = true
     @AppStorage("accessToken") var accessToken: String = ""
+    @AppStorage("isRememberMe") var isRememberMe: Bool = false
     @State var enteringLoginPage: Bool = false
     @State var isAuthenticated: Bool = false
     @StateObject var accountVM = AccountViewModel()

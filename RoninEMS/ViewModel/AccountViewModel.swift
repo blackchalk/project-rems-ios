@@ -9,12 +9,32 @@ import Foundation
 import JWTDecode
 
 class AccountViewModel : ObservableObject {
-    var username: String = "ls1001@yopmail.com"
-    var password: String = "12345"
+    @Published var username: String = ""
+    @Published var password: String = ""
     @Published var token: String? = ""
     @Published var userID: Int? = 0
     @Published var errorMessage: String?
     @Published var profileResponse : ProfileResponse?
+    
+    init() {
+        let shouldRemember = UserDefaults.standard.bool(forKey: "isRememberMe")
+        shouldPopulateLoginFields(rememberMe: shouldRemember)
+    }
+    
+}
+
+extension AccountViewModel {
+    func shouldPopulateLoginFields(rememberMe: Bool){
+        guard let shouldPopulate = UserDefaults.standard.value(forKey: "isRememberMe") as? Bool else { return }
+        if shouldPopulate {
+            let ss  = UserDefaults.standard.string(forKey: "userName") ?? ""
+            let pp = UserDefaults.standard.string(forKey: "password") ?? ""
+            if !ss.isEmpty && !pp.isEmpty {
+                username = ss
+                password = pp
+            }
+        }
+    }
 }
 
 extension AccountViewModel {
@@ -44,7 +64,7 @@ extension AccountViewModel {
 
 extension AccountViewModel {
     
-    func loginUser(completion: @escaping(Result<LoginResponse, NetworkError>) -> Void){
+    func loginUser(isRememberMe: Bool, completion: @escaping(Result<LoginResponse, NetworkError>) -> Void){
         
         if !isValid() { return completion(.failure(.badURL))}
         
@@ -53,14 +73,31 @@ extension AccountViewModel {
         AccountService.shared.loginAccount(loginRequest: payload) { result in
             switch result {
             case .success(let response):
+                
                 DispatchQueue.main.async {
+                    
                     UserDefaults.standard.set(String(response.access_token), forKey: "accessToken") //String
                     guard let storedToken = UserDefaults.standard.string(forKey: "accessToken") else { return }
                     self.token = storedToken
                     self.userID = response.users.userID
+                    
+                    if isRememberMe {
+                        UserDefaults.standard.set(String(self.username), forKey: "userName") //String
+                        UserDefaults.standard.set(String(self.password), forKey: "password") //String
+                    }else{
+                        UserDefaults.standard.set("", forKey: "userName") //String
+                        UserDefaults.standard.set("", forKey: "password") //String
+                    }
+                    
+                    UserDefaults.standard.set(isRememberMe, forKey: "isRememberMe") //String
+                    
                     completion(.success(response))
                 }
             case .failure(let error):
+                if isRememberMe {
+                    // set to false when error
+                    UserDefaults.standard.set(!isRememberMe, forKey: "isRememberMe") //String
+                }
                 print(error.localizedDescription)
             }
         }

@@ -11,7 +11,7 @@ struct LoginView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var accountVM: AccountViewModel
     @AppStorage("accessToken") var accessToken: String = ""
-    @State private var isRememberMe = false
+    @AppStorage("isRememberMe") var isRememberMe: Bool = false
     @Binding var isAuthenticated: Bool // create a state where user is authenticated
     @State private var error: Error? = nil
     
@@ -65,7 +65,8 @@ struct LoginView: View {
                 VStack {
                     Button(action: {
                         DispatchQueue.main.async {
-                            self.accountVM.loginUser { result in
+                            
+                            self.accountVM.loginUser(isRememberMe: self.isRememberMe) { result in
                                 guard let result = result as? LoginResponse else {
                                     return
                                 }
@@ -97,6 +98,12 @@ struct LoginView: View {
                                alignment: .center)
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity ,alignment: .center)
+            }
+            .onChange(of: self.isRememberMe) { newValue in
+                if newValue == false {
+                    UserDefaults.standard.set("", forKey: "userName") //String
+                    UserDefaults.standard.set("", forKey: "password") //String
+                }
             }
         }
     
