@@ -52,6 +52,7 @@ class AccountService {
             let loginResponse = try? JSONDecoder().decode(LoginResponse.self, from: data)
 
             if let loginResponse = loginResponse {
+                print("\(loginResponse.access_token)")
                 completion(.success(loginResponse))
             }else{
                 completion(.failure(.decodingError))
