@@ -11,6 +11,7 @@ struct ProfileView: View {
     @AppStorage("accessToken") var accessToken: String = ""
     @EnvironmentObject var accountVM: AccountViewModel
     @State private var profileData: ProfileResponse?
+    @State private var showEditProfile = false
     var body: some View {
         VStack {
             VStack{
@@ -19,14 +20,20 @@ struct ProfileView: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        // go to edit profile sheet
+                        
+                        showEditProfile = true
                     }, label: {
+                        
                         Text("Edit Profile")
-                            .font(Font.custom("opensans_bold", size: 22))
+                            .font(Font.custom("opensans_bold", size: 18))
                             .foregroundColor(.white)
                             .frame(alignment: .topTrailing)
                             .padding()
                     })
+                    .sheet(isPresented: $showEditProfile) {
+                        // go to edit profile
+                        Dashboard()
+                    }
                 }
                 HStack{
                     ProfileHeaderVerifyNow()

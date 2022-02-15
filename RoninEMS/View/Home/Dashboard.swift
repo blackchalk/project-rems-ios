@@ -21,6 +21,7 @@ struct Dashboard: View {
             Image(systemName: "bandage")
                 .frame(maxWidth: .infinity,maxHeight: .infinity,alignment: .center)
                 .font(Font.custom("poppins_bold", size: 74))
+                .foregroundColor(Color.ui.textColor)
                 .imageScale(.large)
             Spacer()
         }

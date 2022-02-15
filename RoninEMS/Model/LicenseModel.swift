@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GetLicenseBaseResponse: Codable {
+struct GetLicenseBaseResponse: Codable, Equatable {
     var code: Int
     var status: String
     var message: String
@@ -18,6 +18,12 @@ struct GetLicenseBaseResponse: Codable {
         case status = "status"
         case message = "message"
         case results = "results"
+    }
+}
+
+extension GetLicenseBaseResponse {
+    static func ==(lhs:GetLicenseBaseResponse, rhs: GetLicenseBaseResponse) -> Bool {
+        return (lhs.results.licenseID == rhs.results.licenseID)
     }
 }
 
