@@ -12,7 +12,7 @@ struct ProfileHeaderView: View {
     @State private var model : ProfileResponse?
     var body: some View {
         VStack {
-            ExtractedView(title: "Email", information: model?.user.email ?? "-")
+            ExtractedView(title: "Email", information: model?.user?.email ?? "-")
             ExtractedView(title: "Gender", information: model?.gender ?? "Male")
             ExtractedView(title: "Address", information: model?.currentAddress ?? "-")
             ExtractedView(title: "Birthdate", information: model?.birthdate ?? "--")

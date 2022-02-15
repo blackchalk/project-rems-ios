@@ -29,7 +29,7 @@ struct ProfileHeaderVerificationTest: View {
         }
         .onChange(of: accountVM.profileResponse, perform: { newValue in
             model = newValue
-            verify = setVerificationStatus(isVerified: model?.user.isVerified ?? false, isVerifiedHQ: model?.user.isVerifiedHQ ?? false)
+            verify = setVerificationStatus(isVerified: model?.user?.isVerified ?? false, isVerifiedHQ: model?.user?.isVerifiedHQ ?? false)
         })
         .padding()
     }

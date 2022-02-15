@@ -1,18 +1,57 @@
 //
-//  Profile.swift
+//  LicenseModel.swift
 //  RoninEMS
 //
-//  Created by Alvin Raygon on 2/13/22.
+//  Created by Alvin Raygon on 2/15/22.
 //
 
 import Foundation
 
-struct ProfileResponse: Codable ,Equatable {
+struct GetLicenseBaseResponse: Codable {
+    var code: Int
+    var status: String
+    var message: String
+    var results: GetLicenseDetailsResponse
+    
+    enum CodingKeys: String, CodingKey {
+        case code = "code"
+        case status = "status"
+        case message = "message"
+        case results = "results"
+    }
+}
+
+struct GetLicenseDetailsResponse: Codable   {
+    
+    var licenseID: Int
+    var customerID: Int
+    var licenseCode: String
+    var effectivityDate: String
+    var effectivityEndDate: String
+    var status: String
+    var profile: LicenseProfileResponse?
+    var activePackage: GetActivePackageResponse
+    var offering: [Offering]
+    
+    private enum CodingKeys: String, CodingKey {
+        case licenseID = "licenseID"
+        case customerID = "customerID"
+        case licenseCode = "licenseCode"
+        case effectivityDate = "effectivityDate"
+        case effectivityEndDate = "effectivityEndDate"
+        case status = "status"
+        case profile = "profile"
+        case activePackage = "package"
+        case offering = "offering"
+    }
+}
+
+struct LicenseProfileResponse: Codable {
     var profileID: Int
     var customerGroupID: Int
     var customerGroup: CustomerGroup
     var userID: Int
-    var user: Users?
+    var user: LicenseUserResponse?
     var profilePic: String
     var selfiePic: String
     var validIDPic: String
@@ -65,16 +104,33 @@ struct ProfileResponse: Codable ,Equatable {
     }
 }
 
-extension ProfileResponse {
-    static func ==(lhs:ProfileResponse, rhs: ProfileResponse) -> Bool {
-        return (lhs.profileID == rhs.profileID)
-    }
+struct LicenseUserResponse: Codable {
+    let userID: Int
+    let firstName: String
+    let lastName: String
+    let email: String
+    let isVerified: Bool
+    let isVerifiedHQ: Bool
+    let verifiedHQAt: String
+    let verifiedAt: String
 }
 
-struct CustomerGroup: Codable {
-    let customerGroupID: Int
-    let customerGroupName: String
-    let createdAt: String
-    let updatedAt: String
-    let isActive: Bool
+
+struct Offering: Codable {
+    
+    var offeringID : Int
+    var offeringName : String
+}
+
+struct GetActivePackageResponse: Codable  {
+
+    var packageID: Int
+    var packageName: String
+    var packageTypeID: Int
+    var roninPointsPrice: Int
+    var pesoPrice: Int
+    var discount: Int
+    var createdAt: String
+    var updatedAt: String
+    var isActive: Bool
 }

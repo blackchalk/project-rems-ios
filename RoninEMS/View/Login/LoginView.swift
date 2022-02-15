@@ -64,17 +64,22 @@ struct LoginView: View {
                 // MARK - SEND BUTTON
                 VStack {
                     Button(action: {
-                        DispatchQueue.main.async {
-                            
-                            self.accountVM.loginUser(isRememberMe: self.isRememberMe) { result in
-                                guard let result = result as? LoginResponse else {
-                                    return
+                        
+                        self.accountVM.loginUser(isRememberMe: self.isRememberMe) { result in
+                            switch(result) {
+                            case .success(let result):
+//                                    print("loginUser = \(result)")
+                                DispatchQueue.main.async {
+                                    self.accountVM.userID = result.users.userID
+                                    self.accountVM.token = result.access_token
                                 }
-                                self.accountVM.userID = result.users.userID
-                                self.accountVM.token = result.access_token
+                            case .failure(let error):
+                                print("\(error.localizedDescription)")
                             }
-                            isAuthenticated = true
                         }
+                        
+                        isAuthenticated = true
+                        
                     }) {
                         HStack(spacing: 8) {
                             Text("Log in")

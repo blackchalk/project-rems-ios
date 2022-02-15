@@ -45,6 +45,8 @@
 		F0D50AA027A6CA74009D8B40 /* SignUpTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D50A9F27A6CA74009D8B40 /* SignUpTopView.swift */; };
 		F0D50AA227A6E1C0009D8B40 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D50AA127A6E1C0009D8B40 /* LoginView.swift */; };
 		F0DD6E4227BA4A34003FF972 /* ProfileHeaderVerificationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DD6E4127BA4A34003FF972 /* ProfileHeaderVerificationTest.swift */; };
+		F0DD6E4427BAFBCE003FF972 /* LicenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DD6E4327BAFBCE003FF972 /* LicenseModel.swift */; };
+		F0DD6E4627BB6AA6003FF972 /* getLicenseDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = F0DD6E4527BB6AA6003FF972 /* getLicenseDetails.json */; };
 		F0E7D7D827B8D1B700B79920 /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = F0E7D7D727B8D1B700B79920 /* JWTDecode */; };
 		F0F0B35327B5002B00324FFE /* LoginTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0B35227B5002B00324FFE /* LoginTopView.swift */; };
 		F0F0B35527B5006600324FFE /* LoginTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F0B35427B5006600324FFE /* LoginTextFields.swift */; };
@@ -114,6 +116,8 @@
 		F0D50A9F27A6CA74009D8B40 /* SignUpTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTopView.swift; sourceTree = "<group>"; };
 		F0D50AA127A6E1C0009D8B40 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F0DD6E4127BA4A34003FF972 /* ProfileHeaderVerificationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderVerificationTest.swift; sourceTree = "<group>"; };
+		F0DD6E4327BAFBCE003FF972 /* LicenseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseModel.swift; sourceTree = "<group>"; };
+		F0DD6E4527BB6AA6003FF972 /* getLicenseDetails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getLicenseDetails.json; sourceTree = "<group>"; };
 		F0F0B35227B5002B00324FFE /* LoginTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTopView.swift; sourceTree = "<group>"; };
 		F0F0B35427B5006600324FFE /* LoginTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextFields.swift; sourceTree = "<group>"; };
 		F0F0B35627B5426C00324FFE /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
@@ -298,6 +302,7 @@
 				F0B6416B267C1F810080D8A1 /* OnboardingModel.swift */,
 				F0CD56D327B6CD3E0054C775 /* Users.swift */,
 				F02334FF27B818380050D396 /* ProfileModel.swift */,
+				F0DD6E4327BAFBCE003FF972 /* LicenseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				F02334F827B7CDA20050D396 /* authenticate.json */,
+				F0DD6E4527BB6AA6003FF972 /* getLicenseDetails.json */,
 				F0B6416E267C203D0080D8A1 /* OnboardingData.swift */,
 			);
 			path = Data;
@@ -448,6 +454,7 @@
 				F02334F927B7CDA20050D396 /* authenticate.json in Resources */,
 				F075FF1B2679276F00ADC7C5 /* Preview Assets.xcassets in Resources */,
 				F091703A27A6B96A00240418 /* opensans_regular.ttf in Resources */,
+				F0DD6E4627BB6AA6003FF972 /* getLicenseDetails.json in Resources */,
 				F091703727A6B96A00240418 /* poppins_bold.ttf in Resources */,
 				F091703927A6B96A00240418 /* opensans_bold.ttf in Resources */,
 				F091703827A6B96A00240418 /* poppins_medium.ttf in Resources */,
@@ -500,6 +507,7 @@
 				F02334FE27B7EE4A0050D396 /* ProfileView.swift in Sources */,
 				F0BD0D7227B988A40062CA7C /* ProfileHeaderNameView.swift in Sources */,
 				F091702027A5A31E00240418 /* OnboardingBottomMenu.swift in Sources */,
+				F0DD6E4427BAFBCE003FF972 /* LicenseModel.swift in Sources */,
 				F0B6416C267C1F810080D8A1 /* OnboardingModel.swift in Sources */,
 				F0B64163267BF03F0080D8A1 /* OnBoardingCardView.swift in Sources */,
 				F0DD6E4227BA4A34003FF972 /* ProfileHeaderVerificationTest.swift in Sources */,

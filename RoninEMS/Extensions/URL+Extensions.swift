@@ -16,6 +16,10 @@ extension URL {
         return URL(string: String(Config.baseURL + "/v1/users/profiles/".appending(String(id))))
     }
     
+    static func getSubscriptionDetails(id: Int) -> URL? {
+        return URL(string: String(Config.baseURL + "/v1/license/profile-mobile/".appending(String(id))))
+    }
+    
     static func gotoForgetPasswordURL() -> URL? {
         return URL(string: String(Config.baseURL + "/password-reset.html"))
     }

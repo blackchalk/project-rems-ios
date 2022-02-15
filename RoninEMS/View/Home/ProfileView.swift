@@ -40,8 +40,21 @@ struct ProfileView: View {
             .onAppear(perform: {
                 // fetch profile
                 self.accountVM.getProfile() { result in
-                    guard let result = result as? ProfileResponse, ((result as? NetworkError) != nil) else {
-                        return
+                    switch(result){
+                        case .success(let response):
+//                        print("getProfile = \(response)")
+                        
+                        self.accountVM.getSubscriptionDetails { result in
+                            switch(result) {
+                            case .success(let result):
+                                print("getSubscriptionDetails = \(result)")
+                            case .failure(let error):
+                                print("\(error.localizedDescription)")
+                            }
+                        }
+                        
+                    case .failure(let error):
+                        print("\(error.localizedDescription)")
                     }
                 }
             })

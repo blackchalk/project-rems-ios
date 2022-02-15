@@ -48,9 +48,9 @@ struct ProfileHeaderNameView: View {
 
 extension ProfileHeaderNameView {
     private func generateFullName() -> String {
-        var fullName = self.model?.user.firstName ?? "--"
+        var fullName = self.model?.user?.firstName ?? "--"
         fullName = fullName + " "
-        fullName = fullName + (self.model?.user.lastName)!
+        fullName = fullName + (self.model?.user?.lastName)!
         return fullName
     }
 }

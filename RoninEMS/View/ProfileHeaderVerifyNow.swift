@@ -23,6 +23,7 @@ struct ProfileHeaderVerifyNow: View {
                            Image(systemName: "person.fill")
                                .resizable()
                                .scaledToFit()
+                               .foregroundColor(Color.ui.white)
                        })
                     .frame(maxWidth: 234, maxHeight: 300,alignment: .center)
                } else {
@@ -31,6 +32,7 @@ struct ProfileHeaderVerifyNow: View {
                        .resizable()
                        .scaledToFit()
                        .frame(maxWidth: 164, maxHeight: 150,alignment: .center)
+                       .foregroundColor(Color.ui.white)
 
                }
             // verify no button l subscription type

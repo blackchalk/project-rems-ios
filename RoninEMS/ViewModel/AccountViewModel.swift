@@ -14,7 +14,8 @@ class AccountViewModel : ObservableObject {
     @Published var token: String? = ""
     @Published var userID: Int? = 0
     @Published var errorMessage: String?
-    @Published var profileResponse : ProfileResponse?
+    @Published var profileResponse: ProfileResponse?
+    @Published var profileLicensedDetailsResponse: GetLicenseBaseResponse?
     
     init() {
         let shouldRemember = UserDefaults.standard.bool(forKey: "isRememberMe")
@@ -128,6 +129,23 @@ extension AccountViewModel {
                 case .success(let response):
                 DispatchQueue.main.async {
                     self.profileResponse = response
+                    completion(.success(response))
+                }
+                
+                case .failure(let error):
+                    completion(.failure(error))
+            }
+        }
+    }
+    
+    
+    func getSubscriptionDetails(completion: @escaping(Result<GetLicenseBaseResponse,NetworkError>) -> Void){
+        
+        AccountService.shared.getSubscriptionDetails(id: self.userID ?? 0, token: self.token ?? "") { rawResponse in
+            switch rawResponse {
+                case .success(let response):
+                DispatchQueue.main.async {
+                    self.profileLicensedDetailsResponse = response
                     completion(.success(response))
                 }
                 case .failure(let error):

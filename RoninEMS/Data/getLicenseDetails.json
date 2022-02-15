@@ -1,0 +1,86 @@
+{
+    "code": 200,
+    "status": "Success",
+    "message": "Successful!",
+    "results": {
+        "licenseID": 76,
+        "licenseCode": "rEG1Fa",
+        "customerID": 22,
+        "effectivityDate": "2021-02-26T14:38:38.5050004",
+        "effectivityEndDate": "2022-02-26T14:38:38.5050014",
+        "status": "Approved",
+        "profile": {
+            "profileID": 22,
+            "customerGroupID": 1,
+            "customerGroup": {
+                "customerGroupID": 1,
+                "customerGroupName": "Subscriber",
+                "createdAt": "2020-01-19T00:00:00",
+                "updatedAt": "2020-01-19T00:00:00",
+                "isActive": true
+            },
+            "userID": 23,
+            "user": {
+                "userID": 23,
+                "firstName": "Lara",
+                "lastName": "Sanchez",
+                "email": "ls1001@yopmail.com",
+                "isVerified": true,
+                "verifiedAt": "2021-02-26T13:43:49.5333333",
+                "isVerifiedHQ": true,
+                "verifiedHQAt": "2021-02-25T20:35:03.3322318"
+            },
+            "profilePic": "https://pcsapi.vstecs.com.ph//attachment/profile-pictures/1615714319870profile_031421053108120.jpg",
+            "selfiePic": "https://pcsapi.vstecs.com.ph//attachment/Selfies/1613031721418_SELFIE_021121042119514.jpg",
+            "validIDPic": "https://pcsapi.vstecs.com.ph//attachment/ValidID/1613031712979_VALIDID_021121042111312.jpg",
+            "birthdate": "1990-02-02T00:00:00",
+            "gender": "Female",
+            "civilStatus": "Single",
+            "healthCard": "Healthcard",
+            "currentAddress": "62 Maginhawa st, Recto, Manila",
+            "permanentAddress": "62 Maginhawa st, Recto, Manila",
+            "mobileNumber": "09219898913",
+            "telephoneNumber": "",
+            "employmentStatus": "Housewife",
+            "industry": "Banking",
+            "hmoCardNumber": "11111",
+            "referralCode": "",
+            "createdAt": "2021-02-10T09:34:45.0899694",
+            "updatedAt": "2021-03-15T01:41:46.1846424",
+            "isActive": true
+        },
+        "package": {
+            "packageID": 6,
+            "packageName": "Basic",
+            "packageTypeID": 1,
+            "roninPointsPrice": 0,
+            "pesoPrice": 0,
+            "discount": 5,
+            "createdAt": "2021-01-19T00:00:00",
+            "updatedAt": "2021-01-19T00:00:00",
+            "isActive": true
+        },
+        "offering": [
+            {
+                "offeringID": 1,
+                "offeringName": "Home Care"
+            },
+            {
+                "offeringID": 2,
+                "offeringName": "House Call"
+            },
+            {
+                "offeringID": 4,
+                "offeringName": "Emergency"
+            },
+            {
+                "offeringID": 5,
+                "offeringName": "Medicine Delivery"
+            },
+            {
+                "offeringID": 6,
+                "offeringName": "Medical Laboratory"
+            }
+        ]
+    }
+}

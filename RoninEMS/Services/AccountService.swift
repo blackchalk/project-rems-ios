@@ -78,11 +78,41 @@ class AccountService {
                 return completion(.failure(.noData))
             }
             
-            let decodedValue = try! JSONDecoder().decode(ProfileResponse.self, from: data) as? ProfileResponse
+            let decodedValue = try? JSONDecoder().decode(ProfileResponse.self, from: data)
 
             if let decodedValue = decodedValue {
                 completion(.success(decodedValue))
             }else{
+                print("\(String(describing: error?.localizedDescription))")
+                completion(.failure(.decodingError))
+            }
+            
+        }.resume()
+    }
+    
+    func getSubscriptionDetails(id: Int, token: String, completion: @escaping (Result<GetLicenseBaseResponse, NetworkError>) -> Void){
+        
+        guard let url = URL.getSubscriptionDetails(id: id) else {
+            return completion(.failure(.badURL))
+        }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue(Config.appSecret, forHTTPHeaderField: "app-secret")
+        request.addValue("Bearer " + token, forHTTPHeaderField: "Authorization")
+
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                return completion(.failure(.noData))
+            }
+            
+            let decodedValue = try! JSONDecoder().decode(GetLicenseBaseResponse.self, from: data)
+
+            if let decodedValue = decodedValue as? GetLicenseBaseResponse {
+                completion(.success(decodedValue))
+            }else{
+                print("\(String(describing: error?.localizedDescription))")
                 completion(.failure(.decodingError))
             }
             
